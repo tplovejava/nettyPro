@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+#关闭thymeleaf缓存 开发时使用 否则没有实时画面
+spring:
+  thymeleaf:
+    cache: false
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/
+  mvc:
+    static-path-pattern: /**
